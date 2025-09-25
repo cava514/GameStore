@@ -1,0 +1,13 @@
+name: Отчет об ошибке
+description: шаблон для оформления отчета об ошибке
+title: "[Ошибка]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Подробное описание сути дефекта
+      placeholder: Вывод сообщения об ошибке ...
+    validations:
+      required: true
