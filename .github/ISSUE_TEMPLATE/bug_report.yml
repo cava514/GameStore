@@ -11,3 +11,27 @@ body:
       placeholder: Вывод сообщения об ошибке ...
     validations:
       required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Тип
+      description: Выбрать тип дефекта
+      options:
+       - Низкий
+       - Средний
+       - Высокий
+       - Критический
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        По другим вопросам example@gmail.com
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Подпись
+      description: Отправляя этот отчёт о дефект, вы соглашаетесь соблюдать устав
+      options:
+      - label: Я согласен соблюдать устав
+        required: true
